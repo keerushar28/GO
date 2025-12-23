@@ -16,5 +16,13 @@ func main() {
 	//int data type
 	var userAge int
 	userAge = 20
-	fmt.Printf("%v is %v years old", userName, userAge)
+	fmt.Printf("%v is %v years old\n", userName, userAge)
+
+	//printing the data type 
+	var conference = "Go Conference"
+	var tickets = 100
+	var remainingTickets = 75
+	var ticketPrice = 299.99
+	
+	fmt.Printf("Data type of conference is %T , tickets is %T, remainingTickets is %T, ticketPrice is %T\n", conference, tickets, remainingTickets, ticketPrice)
 }
