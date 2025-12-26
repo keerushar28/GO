@@ -44,4 +44,22 @@ func main() {
 	fmt.Printf("Type of array is %T\n", bookings)
 	fmt.Printf("The remaining tickets are %v\n", remainingTickets)
 
+	//problems with arrays is that we need to know the size of the array at the time of declaration
+	//and we cannot add or remove elements from the array after it is declared
+	//so, we use slices to overcome this problem
+	//slice is similar to array but we dont define the size initially, it grows automatically
+	//adding elements to slice is only different from array, printing and accessing elements is same
+
+	//lets see a example how to use slices
+
+	var bookingSlice []string
+	// add garda slice name = append(Slicename, elements......)
+	bookingSlice = append(bookingSlice, "Ram", "Shyam", "Hari", "Sita", "Gita")
+	fmt.Printf("The booking slice is %v\n", bookingSlice)
+	fmt.Printf("The length of the booking slice is %v\n", len(bookingSlice))
+	fmt.Printf("The capacity of the booking slice is %v\n", cap(bookingSlice))
+	fmt.Printf("The first element of the booking slice is %v\n", bookingSlice[0])
+	fmt.Printf("The last element of the booking slice is %v\n", bookingSlice[len(bookingSlice)-1])
+	fmt.Printf("The capacity of the booking slice is %v\n", cap(bookingSlice))
+
 }
