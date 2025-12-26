@@ -34,7 +34,7 @@ func main() {
 	bookings[30] = "Rahul Sharma"
 
 	//error dekhauxa because yo array size vanda mathi xa so, ani go le runtime ma haina compile time mai error dekhauxa
-	bookings[62] = "Error out of bounds" //invalid argument: index 62 out of bounds [0:60]compilerInvalidIndex
+	//bookings[62] = "Error out of bounds" //invalid argument: index 62 out of bounds [0:60]compilerInvalidIndex
 
 	//printing array information
 
