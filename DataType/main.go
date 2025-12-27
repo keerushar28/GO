@@ -32,5 +32,9 @@ func main() {
 	e:= "Kiran"
 	fmt.Printf("Welcome %v", e)
 
+	f:= 15
+
+	fmt.Printf("Value of e is %d", f)
+
 }
 
