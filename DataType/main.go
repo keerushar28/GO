@@ -27,4 +27,10 @@ func main() {
 	fmt.Printf("Data type of conference is %T , tickets is %T, remainingTickets is %T, ticketPrice is %T\n", conference, tickets, remainingTickets, ticketPrice)
 	//printing the memory address of a variable
 	fmt.Print(&conference)
+
+
+	e:= "Kiran"
+	fmt.Printf("Welcome %v", e)
+
 }
+
