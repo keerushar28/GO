@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	var availabe = 50
@@ -40,6 +43,14 @@ func main() {
 			fmt.Printf("All tickets have been sold out")
 			break
 		}
+
+		//for each loop in go syntax is for index, name:= range ArrayName{var something = strings.Fields(name)} //_ is used as blank identifier
+		var firstNames []string
+		for _, booking := range bookingSlice {
+			var names = strings.Fields(booking)
+			firstNames = append(firstNames, names[0])
+		}
+		fmt.Printf("First name of attendes is %v",firstNames)
 
 	}
 }
