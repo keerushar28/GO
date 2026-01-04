@@ -6,4 +6,5 @@ func main() {
 	fmt.Println("Hello, World!")
 	fmt.Println("Welcome to Go programming!")
 	fmt.Println("This is a simple Go application.")
+	fmt.Println("THis is demo from idefrom jetbrains ")
 }
